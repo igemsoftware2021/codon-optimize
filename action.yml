@@ -1,4 +1,4 @@
-name: codon-optimizer
+name: codon-optimize
 description: A Github action to codon optimize a list of Genbank files.
 inputs:
     input:
@@ -14,11 +14,11 @@ runs:
     using: 'docker'
     image: 'Dockerfile'
     args:
-        - ${{ inputs.input }}
-        - ${{ inputs.output }}
-        - ${{ inputs.codonTable }}
+        - ${{ inputs.input-file        }}
+        - ${{ inputs.output-file       }}
+        - ${{ inputs.input-codon-table }}
 
 author: Friendzymes Team
 branding:
-      icon: 'layers'
-      color: 'purple'
+    icon:  'layers'
+    color: 'purple'

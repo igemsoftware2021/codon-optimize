@@ -20,7 +20,7 @@ var (
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "codon-optimizer",
+	Use:   "codon-optimize",
 	Short: `A Github action to codon optimize a list of sequences.`,
 	Long:  `A Github action to codon optimize a list of sequence.`,
 	Run: func(cmd *cobra.Command, args []string) {

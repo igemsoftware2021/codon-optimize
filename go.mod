@@ -1,4 +1,4 @@
-module github.com/Open-Science-Global/codon-optimizer
+module github.com/Open-Science-Global/codon-optimize
 
 go 1.17
 
