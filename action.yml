@@ -1,14 +1,14 @@
 name: codon-optimize
 description: A Github action to codon optimize a list of Genbank files.
 inputs:
-    input:
+    input-file:
         description: 'A fasta file with all the sequences that will be read'
         required: true
-    output:
+    output-file:
         description: 'Path and file name where an output fasta file will be written'
         required: true
-    codonTable:
-        description: 'A Codon Table in a JSON file format'
+    input-codon-table:
+        description: 'A codon table in JSON file format'
         required: true
 runs:
     using: 'docker'
