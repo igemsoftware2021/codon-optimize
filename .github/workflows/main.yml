@@ -27,6 +27,6 @@ jobs:
       - uses: Open-Science-Global/codon-optimizer@v0.2
         with:
           input: input/enzymes.fasta
-          output: output/enzymes.fasta
+          output: optimized.fasta
           codonTable: input/bsub-py79-codon-table.json
       - run: ls -lR
