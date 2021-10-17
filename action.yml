@@ -9,7 +9,7 @@ inputs:
         required: true
     codonTable:
         description: 'A Codon Table in a JSON file format'
-        required: true,
+        required: true
 runs:
     using: 'docker'
     image: 'Dockerfile'
