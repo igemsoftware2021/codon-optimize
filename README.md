@@ -18,11 +18,11 @@ This is the segue so you don't get scared when the detail comes in.
 
 Every argument is required.
 
-| Option              | Description                                                    | Default   |
-| ------------------- | -------------------------------------------------------------- | --------- |
-| [input-file]        | A fasta file with all the sequences that will be read          |           |
-| [output-file]       | Path and file name where an output fasta file will be written  |           |
-| [input-codon-table] | A codon table in JSON file format                              |           |
+| Option              | Description                                                 | Default   |
+| ------------------- | ----------------------------------------------------------- | --------- |
+| [input-file]        | A fasta file with all input sequences that will be read     |           |
+| [output-file]       | Path and file name where output fasta file will be written  |           |
+| [input-codon-table] | A codon table in JSON file format                           |           |
 
 
 ### Detailed Options
@@ -67,4 +67,4 @@ See [Friendzymes Cookbook] for further examples and sample data.
 [action.yml]:                 ./action.yml
 [input-file]:                 #input-dir
 [output-file]:                #output-dir
-[input-codon-table]:          #input-pattern
+[input-codon-table]:          #input-codon-table

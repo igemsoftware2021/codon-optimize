@@ -2,10 +2,10 @@ name: codon-optimize
 description: A Github action to codon optimize a list of Genbank files.
 inputs:
     input-file:
-        description: 'A fasta file with all the sequences that will be read'
+        description: 'A fasta file with all input sequences that will be read'
         required: true
     output-file:
-        description: 'Path and file name where an output fasta file will be written'
+        description: 'Path and file name where output fasta file will be written'
         required: true
     input-codon-table:
         description: 'A codon table in JSON file format'
