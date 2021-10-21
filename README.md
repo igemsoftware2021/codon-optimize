@@ -8,9 +8,9 @@
 
 A Github action to codon optimize sequences.
 
-dna-annotate is a pretty great tool for low-attention readers like yourself who want the executive summary. This is executive-land, where all the C Suite execs live it up, only reading above the fold and never reading the fine print. Whee!
+codon-optimize is a Github Action that receives a path for a aminoacid fasta file (faa), a codon table with the absolute frequency of each triplet in a JSON format, and a path and name of output file that will be written. This action will use the codon table to codon optimize a given sequence.
 
-This is the segue so you don't get scared when the detail comes in.
+If you know some feature that you think will make this action better, please, feel encouraged to comment in the Issue section.
 
 ## All options
 
@@ -29,22 +29,19 @@ Every argument is required.
 
 #### input-file
 
-Phasellus ac felis auctor, molestie libero at, posuere tellus. Morbi interdum interdum viverra.
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+This parameter is the path for your aminoacid fasta file (faa) to be codon optimized. This parameter doesn't have any parameter by default.
 
 Default: undefined
 
 #### output-file
 
-Phasellus ac felis auctor, molestie libero at, posuere tellus. Morbi interdum interdum viverra.
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+This parameter is the path and file name of the codon optimized sequences that should be written as a fasta file. This parameter doesn't have any parameter by default.
 
 Default: undefined
 
 #### input-codon-table
 
-Phasellus ac felis auctor, molestie libero at, posuere tellus. Morbi interdum interdum viverra.
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+This parameters is the path and file name for the codon table. This table will be used for codon optimize a given sequence. This parameter doesn't have any parameter by default.
 
 Default: undefined
 
@@ -53,7 +50,8 @@ Default: undefined
 Basic:
 
 ```yaml
-name: 'Some dummy YAML'
+- name: codon-optimizer
+  uses: Open-Science-Global/codon-optimize@v0.2
 ```
 
 See [action.yml] for a comprehensive list of all the options.
