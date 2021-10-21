@@ -8,9 +8,9 @@
 
 A Github action to codon optimize sequences.
 
-codon-optimize is a Github Action that receives a path for a aminoacid fasta file (faa), a codon table with the absolute frequency of each triplet in a JSON format, and a path and name of output file that will be written. This action will use the codon table to codon optimize a given sequence.
+codon-optimize is a Github Action that receives a path for an amino acid fasta file (faa), a codon table with the absolute frequency of each triplet in JSON format, and a path and name of an output file that will be written. This action will use the provided codon table to codon optimize a given sequence.
 
-If you know some feature that you think will make this action better, please, feel encouraged to comment in the Issue section.
+If you have some feature that you think will make this action better, please feel free to create an issue.
 
 ## All options
 
@@ -29,19 +29,19 @@ Every argument is required.
 
 #### input-file
 
-This parameter is the path for your aminoacid fasta file (faa) to be codon optimized. This parameter doesn't have any parameter by default.
+This parameter is the path for your amino acid fasta file (faa) to be codon optimized. This parameter doesn't have any value by default.
 
 Default: undefined
 
 #### output-file
 
-This parameter is the path and file name of the codon optimized sequences that should be written as a fasta file. This parameter doesn't have any parameter by default.
+This parameter is the path and file name of the codon-optimized sequences that should be written as a fasta file. This parameter doesn't have any value by default.
 
 Default: undefined
 
 #### input-codon-table
 
-This parameters is the path and file name for the codon table. This table will be used for codon optimize a given sequence. This parameter doesn't have any parameter by default.
+This parameter is the path and file name for the codon table. This table will be used to codon optimize a given sequence. This parameter doesn't have any value by default.
 
 Default: undefined
 
